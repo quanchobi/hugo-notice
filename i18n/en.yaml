@@ -6,3 +6,11 @@
   translation: "Info"
 - id: tip
   translation: "Tip"
+- id: code
+  translation: "Code"
+- id: question
+  translation: "Question"
+- id: example
+  translation: "Example"
+- id: abstract
+  translation: "Abstract"
