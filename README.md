@@ -1,6 +1,6 @@
 # hugo-notice
 
-[![Awesome](https://awesome.re/badge.svg)](https://github.com/budparr/awesome-hugo)
+This is my fork of hugo-notice. I added a few admonitions, example, code, question, and abstract.
 
 ## About
 
@@ -10,7 +10,7 @@ Several sets of icons are provided too: make your choice second your taste!
 
 Four notice types are provided: `warning`, `info`, `note` and `tip`.
 
-This component comes with __localization in 18 languages__: English, French, German, Italian, Portuguese, Spanish, Chinese, Russian, Turkish, Arabic, Polish, Finnish, Korean, Vietnamese, Swahili, Japanese, Chinese (Taiwan) and Swedish.
+This component comes with **localization in 18 languages**: English, French, German, Italian, Portuguese, Spanish, Chinese, Russian, Turkish, Arabic, Polish, Finnish, Korean, Vietnamese, Swahili, Japanese, Chinese (Taiwan) and Swedish.
 
 Other languages welcome! Send your pull request.
 
@@ -22,33 +22,36 @@ Other languages welcome! Send your pull request.
 
 1. Initialize your existing site as hugo module
 
-    ```shell
-    hugo mod init github.com/USERNAME/REPO
-    ```
+   ```shell
+   hugo mod init github.com/USERNAME/REPO
+   ```
 
 2. Add the `hugo-notice` as a hugo module to be able to get upstream changes later
 
-    ```shell
-    hugo mod get github.com/martignoni/hugo-notice
-    ```
+   ```shell
+   hugo mod get github.com/martignoni/hugo-notice
+   ```
 
 3. In your site's or theme's configuration file `hugo.yaml` or `hugo.toml`, add a new `module` section and define both `hugo-notice` and your currently used theme as modules to be imported.
 
-    Example, with `hugo.yaml`:
-    ```yaml
-    module:
-      imports:
-        - path: github.com/martignoni/hugo-notice
-        - path: my-theme
-    ```
-    or, with `hugo.toml`,
-    ```toml
-    [module]
-      [[module.imports]]
-        path = "github.com/martignoni/hugo-notice"
-      [[module.imports]]
-        path = "my-theme"
-    ```
+   Example, with `hugo.yaml`:
+
+   ```yaml
+   module:
+     imports:
+       - path: github.com/martignoni/hugo-notice
+       - path: my-theme
+   ```
+
+   or, with `hugo.toml`,
+
+   ```toml
+   [module]
+     [[module.imports]]
+       path = "github.com/martignoni/hugo-notice"
+     [[module.imports]]
+       path = "my-theme"
+   ```
 
 ### As a Git submodule
 
@@ -57,22 +60,29 @@ Other languages welcome! Send your pull request.
 2. Add `hugo-notice` as the left-most element of the `theme` list variable in your site's or theme's configuration file `hugo.yaml` or `hugo.toml`.
 
    Example, with `hugo.yaml`:
-    ```yaml
-    theme: ["hugo-notice", "my-theme"]
-    ```
-    or, with `hugo.toml`,
-    ```toml
-    theme = ["hugo-notice", "my-theme"]
-    ```
+
+   ```yaml
+   theme: ["hugo-notice", "my-theme"]
+   ```
+
+   or, with `hugo.toml`,
+
+   ```toml
+   theme = ["hugo-notice", "my-theme"]
+   ```
+
 ## Usage
 
 In your site, use the shortcode, this way:
+
 ```go
 {{< notice warning >}}
 This is a warning notice. Be warned!
 {{< /notice >}}
 ```
+
 or
+
 ```go
 {{< notice tip >}}
 This is a very good tip.
@@ -89,7 +99,7 @@ Another way to make it work is to inject (e.g. via Javascript) the class `dark` 
 
 Just copy the icons from one of the subfolders of folder `icons/` into folder `icons/`.
 
-Any __solid__ SVG icons can be used. If you want to contribute your open licensed icons, your pull request is welcome.
+Any **solid** SVG icons can be used. If you want to contribute your open licensed icons, your pull request is welcome.
 
 ## Acknowledgements
 
@@ -98,6 +108,7 @@ Copyright © 2019 onwards, Nicolas Martignoni nicolas@martignoni.net.
 ### Localization
 
 Thanks to
+
 - [Geraldo Ribeiro](https://github.com/geraldolsribeiro) for the Portuguese localization.
 - [thatrocketx](https://github.com/thatrocketx) for the Italian localization.
 - [casaqori](https://github.com/casaqori) for the Spanish localization.
@@ -115,6 +126,7 @@ Thanks to
 ### Development
 
 Thanks to
+
 - [Gary Tai](https://github.com/gary-tai) for raising a nasty spacing bug.
 - [Dephilia](https://github.com/Dephilia) for suggesting and implementing dark mode.
 - [RoneoOrg](https://github.com/RoneoOrg) for implementing default notice type.
